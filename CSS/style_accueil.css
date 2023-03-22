@@ -13,7 +13,7 @@
 }
 
 /* Application de la police Shrikhand aux titre et logo */
-.logo h1 h2 h3
+.logo h1 h2 h3 h4
 {
     font-family: 'Shrikhand', sans-serif;
 }
@@ -21,7 +21,6 @@
 /* Règles si la fenêtre fait au plus 768px de large */
 @media screen and (max-width: 768px)
 {
-
     h1 .logo
     {
         display: block;
@@ -31,6 +30,68 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    /* Filtres */
+article.categories-filters
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 30px;
+    margin: 15px;
+}
+
+article.categories-filters h3
+{
+   margin: 20px 0 20px 0;
+   font-size: 30px;
+   font-weight: 700;
+   width: 100%;
+   text-align: left;
+  
+}
+
+.categories-filters .fa-solid 
+{
+    font-size: 25px;
+    padding: 15px;
+    width: 60px;
+    height: 60px;
+    margin: -3px;
+    margin-right: 15px;
+}
+
+.numbers
+{
+    display: inline-block;
+    width: 34px;
+    margin: 0 20px 0 -25px;
+    padding: 5px;
+    text-align: center;
+    background: #9356DC;
+    border-radius: 50px;
+    color: white;
+}
+
+i
+{
+    color: #9356DC;
+}
+
+.link_filter {
+    border: 3px solid #F2F2F2;
+    border-radius: 30px;
+    background-color: rgba(211, 211, 211, 0.44);
+    box-shadow: grey;
+    font-weight: 500;
+    padding-right: 25px;
+    font-size: 20px;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    
+}
 
     .location
     {
@@ -55,7 +116,8 @@
 
     .title
     {
-    
+        background-color: rgba(211, 211, 211, 0.44);
+        padding-bottom: 60px;
     }
 
     h2
@@ -69,32 +131,35 @@
     {
         text-align: center;
         margin-bottom: 70px;
-        font-size: 25px;
+        font-size: 20px;
+        font-weight: 300;
     }
 
     .title a
     {
         display: block;
         text-decoration: none;
+        text-align: center;
         background-color: #9356DC;
         color: white;
         font-size: 23px;
-        font-weight: bolder;
+        font-weight: 500;
         padding: 23px;
         border-radius: 50px;
-        width: 60%;
+        width: 65%;
         margin: auto;
     }
 
-    ol 
+    .fonction  
     {
-        display: block;
+        display: flex;
+        flex-direction: column;
         width: 90%;
         margin: auto;
         
     }
 
-    li 
+    a 
     {
         padding: 5% 5% 5% 3%;
         font-size: 25px;
@@ -102,13 +167,13 @@
         border-radius: 20px;
     }
 
-    li i 
+    a i 
     {
         padding-right: 6%;
         color: grey;
     }
 
-    li i:hover 
+    a i:hover 
     {
         color: #9356DC;
     }
@@ -116,23 +181,36 @@
 
     .restaurants
     {
-        background-color: lightgrey;
+        background-color: rgba(211, 211, 211, 0.336);
+        padding-top: 30px;
+    }
+
+    .restaurants h3  
+    {
+        margin: 15px;
+        margin-top: 30px;
+        font-size: 30px;
+        font-weight: 700;
+        text-align: left;
+        padding-left: 15px;
     }
 
     .card
     {
         display: block;
         width: 90%;
-        margin: auto; 
+        margin: auto auto 10px auto; 
         height: 350px;
         border-radius: 20px;
-        background-color: white;      
+        background-color: white;
+        padding: 0;      
     }
 
-    .card a
+    .link-card
     {
         text-decoration: none;
         color: black;
+        padding: 0;
     }
 
     .card_img 
@@ -144,30 +222,80 @@
         object-fit: cover;  
     }
 
+    .label_new {
+        display: block;
+        width: auto;
+        position: absolute;
+        z-index: 9999;
+        float: right;
+        padding: 10px;
+        color: #037457;
+        right: 9%;
+        background: #99E2D0;
+        margin: 10px;
+        font-size: 19px;
+        font-family: 'Roboto';
+        font-weight: 600;
+        border-radius: 5px;
+    }
+
     .card_body
     {
         display: flex;
+        padding: 0 0 0 15px;
     }
 
     .body-titles
     {
-        padding: 4% 40% 0 3%;
+        width: 90%;
+        padding-top: 5%;
     }
 
     h4 
     {
         font-size: 27px;
-        font-weight: 900;
+        /*font-weight: 500;*/
     }
 
     h5 
     {
         font-size: 25px;
+        font-weight:300;
     }
 
     .heart
     {
         font-size: 35px;
         padding-top: 5%;
+        width: 20%;
+        text-align: center;
+    }
+
+    footer 
+    {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(69, 68, 68);
+        margin-top: 80px;
+        padding-top: 20px;
+    }
+
+    footer a 
+    {
+        font-size: 22px;
+        background-color: rgb(69, 68, 68);
+        padding: 0px 0 5px 20px;
+        color: white;
+        
+    }
+
+    footer img {
+        width: 35%;
+        padding: 10px 0 30px 20px;
+        filter: invert(100%);
+    }
+
+    footer i {
+        color: white;
     }
 }
