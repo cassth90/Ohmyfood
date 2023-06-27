@@ -1,29 +1,38 @@
 @charset "UTF-8";
+
 /* CSS Document */
 /* Application de la propriété box-sizing à tout le document */
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /* Application de la police Roboto à tout le document */
 * {
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+}
 
-html,body{width:100%}
+html,
+body {
+  width: 100%
+}
 
 header {
   width: 100%;
-  display: inline-flex; }
+  display: inline-flex;
+}
 
 header a {
   width: 50px;
   font-size: 30px;
   color: #000000;
-  padding: 15px; }
+  padding: 15px;
+}
 
 header h1 {
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 h1 .logo {
   width: 100%;
@@ -31,44 +40,53 @@ h1 .logo {
   padding-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
-  justify-content: center; }
+  justify-content: center;
+}
 
 section.image_top {
-  padding: 0; }
+  padding: 0;
+}
 
 div.image_header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 150px 0; }
+  padding: 150px 0;
+}
 
-.palette{ background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
- }
-.note_enchantee{ background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
- }
-.delices_sens{ background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
- }
-.francaise{ background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
- }
+.palette {
+  background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
+.note_enchantee {
+  background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+
+.delices_sens {
+  background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+
+.francaise {
+  background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
 
 
- a.commande 
- {
-     display: block;
-     text-decoration: none;
-     text-align: center;
-     background: linear-gradient(175deg, #ff79da 10%, #9356dc 90%);
-     color: white;
-     font-size: 23px;
-     font-weight: 500;
-     padding: 23px;
-     border-radius: 50px;
-     width: 300px;
-     margin: auto;
-     box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.3);
- }
+a.commande {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  background: linear-gradient(175deg, #ff79da 10%, #9356dc 90%);
+  color: white;
+  font-size: 23px;
+  font-weight: 500;
+  padding: 23px;
+  border-radius: 50px;
+  width: 300px;
+  margin: auto;
+  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
 
- a.commande:hover {
+a.commande:hover {
   opacity: 0.8;
   box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.8);
 }
@@ -77,213 +95,338 @@ section.plats_restaurant {
   width: 100%;
   background-color: #EEEEEE;
   border-radius: 20px;
-  margin-top: -30px; 
-  padding-bottom:30px;
-  Animation-name : fade ;
-  Animation-delay : 0s;
-  Animation-duration : 4s;
-  Animation-iteration-count : 1;
+  margin-top: -30px;
+  padding-bottom: 30px;
+  Animation-name: fade;
+  Animation-delay: 0s;
+  Animation-duration: 4s;
+  Animation-iteration-count: 1;
 }
 
 @keyframes fade {
   From {
-  Opacity : 0 ;
+    Opacity: 0;
   }
+
   To {
-  Opacity : 1 ;
+    Opacity: 1;
   }
-  }
+}
 
 .plats_restaurant_top {
   display: inline-flex;
   width: 100%;
-  padding: 15px; }
+  padding: 15px;
+}
 
 .plats_restaurant_top h2 {
-  width: 95%; }
+  width: 95%;
+}
 
 .heart {
   font-size: 35px;
   width: 5%;
-  text-align: center; }
+  text-align: center;
+}
 
 /*   MENU CARTES   */
 .menu_details {
-  display: inline-block; margin:0 10px;width:30%;vertical-align: top; }
+  display: inline-block;
+  margin: 0 10px;
+  width: 31%;
+  vertical-align: top;
+}
 
 .menu_details h3 {
-  padding: 15px; }
+  padding: 15px;
+}
+
+.fa-circle-check{
+  color:#ffffff; font-weight: 900;
+    text-align: center;
+   
+    display: block;
+    vertical-align: middle;
+    padding: 18px;
+    font-size: 26px;
+    rotate: -190deg;
+    transition: rotate 0.5s;
+}
 
 
-
-ul{width:33%;}
+ul {
+  width: 33%;
+}
 
 .cards {
- display: flex;
+  display: flex;
   width: 100%;
   background: #ffffff;
   border-radius: 15px;
-  padding: 10px;
-  margin: 10px; }
+  height: auto;
+  margin: 0px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
 
-  .cards .card_left {
-    width: 90%;}
+.checkbox {
+  background-color: #99E2D0;
+  width: 100px;
+  height: inherit;
+ 
+  position: relative;
+ 
+  transition:0.2s;
+  translate: 100%;
+  float: right;
+  display: block;
+}
 
-  .cards .price {
-    bottom: 0;
-    font-weight: bold;
-    padding-top: 20px; }
-	
-  .cards:hover span {
-    transform: translateX(-50%); }
-footer a i 
- {
-     padding-right: 20px;
- }
-footer 
- {
-     display: flex;
-     flex-direction: column;
-     background-color: rgb(69, 68, 68);
-     
-     padding-top: 20px;
- }
+.cards:hover .checkbox{
+  translate: 3px;
+  width: 25%;
+  overflow: hidden;
+  border-radius: 0 20px 20px 0;
+}
 
- footer a 
- {
-     font-size: 22px;
-     background-color: rgb(69, 68, 68);
-     padding: 0px 0 5px 20px;
-     color: white;
-     
- }
+.cards:hover .card-right{
+  translate:-10px;
+  width: 25%;
+  /* text-align: center; */
+  /* float: right; */
+  /* padding: 0 0 0 30px; */
+}
 
- footer img {
-     width: 300px;
-     padding: 10px 0 30px 20px;
-     filter: invert(100%);
- }
+.cards:hover .fa-circle-check{
+  rotate:0deg;
+}
+
+.cards .card_left {
+  width: 65%;
+  margin: 10px;
+  
+  display: block;
+  text-overflow: ellipsis;
+}
+
+.card-right {
+ 
+  width: 16%;
+ 
+  height: auto;
+  display: flex;
+  translate: 80px;
+  
+  transition:0.2s;
+}
+
+.cards .price {
+  bottom: 0;
+ 
+  font-weight: bold;
+  vertical-align: middle;
+  text-align: right;
+  margin: 15px;
+ 
+}
+
+
+.cards:hover .card_left p{
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.cards:hover .card_left, .cards:hover .card-left p{
+  width:50%!important;
+}
+/*.cards:hover span {
+  transform: translateX(-50%);
+}*/
+
+icon {
+  align-items: center;
+  color: #fff;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-container {
+  padding: .8rem;
+  align-items: center;
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding: .7rem 0;
+  width: 0;
+  padding: 0 1.8rem;
+  width: .51rem;
+  -webkit-transition: all 0.55s;
+}
+
+footer a i {
+  padding-right: 20px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(69, 68, 68);
+
+  padding-top: 20px;
+}
+
+footer a {
+  font-size: 22px;
+  background-color: rgb(69, 68, 68);
+  padding: 0px 0 5px 20px;
+  color: white;
+
+}
+
+footer img {
+  width: 300px;
+  padding: 10px 0 30px 20px;
+  filter: invert(100%);
+}
 
 footer i {
-     color: white;
- }
-
-
-
-@media screen and (max-width: 768px)
-{
-html,	body{width:100%}
-header {
-  width: 100%;
-  display: inline-flex; }
-
-header a {
-  width: 50px;
-  font-size: 30px;
-  color: #000000;
-  padding: 15px; }
-
-header h1 {
-  margin: 0 auto; }
-
-h1 .logo {
-  width: 300px;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center; }
-
-section.image_top {
-  padding: 0; }
-
-div.image_header {
-  background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 150px 0; }
-
-section.plats_restaurant {
-  width: 100%;
-  background-color: #EEEEEE;
-  border-radius: 20px;
-  margin-top: -30px; }
-
-.plats_restaurant_top {
-  display: inline-flex;
-  width: 95%;
-  padding: 15px; }
-
-.plats_restaurant_top h2 {
-  width: 95%; }
-
-.heart {
-  font-size: 30px;
-  width: 7%;
-  text-align: center; }
-
-/*   MENU CARTES   */
-.menu_details {
-  	display: block;
-	width:95%;
-	margin:0;
-	padding:0 5px;}
-
-.menu_details h3 {
-  padding: 10px; }
-
-.cards {
-  display: inline-flex;
-  width: 100%;
-  background: #ffffff;
-  border-radius: 15px;
-  padding: 10px;
-  margin: 10px; }
-	
-  .cards .card_left {
-    width: 90%; }
-	
-  .cards .price {
-    bottom: 0;
-    font-weight: bold;
-    padding-top: 20px; }
-	
-  .cards:hover span {
-    transform: translateX(-50%); }
-	
-	footer 
-    {
-        display: flex;
-        flex-direction: column;
-        background-color: rgb(69, 68, 68);
-        
-        padding-top: 20px;
-    }
-
-    footer a 
-    {
-        font-size: 18px;
-        background-color: rgb(69, 68, 68);
-        padding: 0px 0 5px 20px;
-        color: white;
-        
-    }
-
-    footer img {
-        width: 35%;
-        padding: 10px 0 30px 20px;
-        filter: invert(100%);
-    }
-
-    footer i {
-        color: white;
-    }
-	footer a i 
- {
-     padding-right: 6%;
- }
+  color: white;
 }
 
 
 
+@media screen and (max-width: 768px) {
+
+  html,
+  body {
+    width: 100%
+  }
+
+  header {
+    width: 100%;
+    display: inline-flex;
+  }
+
+  header a {
+    width: 50px;
+    font-size: 30px;
+    color: #000000;
+    padding: 15px;
+  }
+
+  header h1 {
+    margin: 0 auto;
+  }
+
+  h1 .logo {
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+
+  section.image_top {
+    padding: 0;
+  }
+
+  div.image_header {
+    background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 150px 0;
+  }
+
+  section.plats_restaurant {
+    width: 100%;
+    background-color: #EEEEEE;
+    border-radius: 20px;
+    margin-top: -30px;
+  }
+
+  .plats_restaurant_top {
+    display: inline-flex;
+    width: 95%;
+    padding: 15px;
+  }
+
+  .plats_restaurant_top h2 {
+    width: 95%;
+  }
+
+  .heart {
+    font-size: 30px;
+    width: 7%;
+    text-align: center;
+  }
+
+  /*   MENU CARTES   */
+  .menu_details {
+    display: block;
+    width: 95%;
+    margin: 0;
+    padding: 0 5px;
+  }
+
+  .menu_details h3 {
+    padding: 10px;
+  }
+
+  .cards {
+    display: inline-flex;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .cards .card_left {
+    width: 90%;
+  }
+
+  .cards .price {
+    bottom: 0;
+    font-weight: bold;
+    padding-top: 20px;
+  }
+
+  .cards:hover span {
+    transform: translateX(-50%);
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(69, 68, 68);
+
+    padding-top: 20px;
+  }
+
+  footer a {
+    font-size: 18px;
+    background-color: rgb(69, 68, 68);
+    padding: 0px 0 5px 20px;
+    color: white;
+
+  }
+
+  footer img {
+    width: 35%;
+    padding: 10px 0 30px 20px;
+    filter: invert(100%);
+  }
+
+  footer i {
+    color: white;
+  }
+
+  footer a i {
+    padding-right: 6%;
+  }
+}
